@@ -1,5 +1,4 @@
 /* ESTILO GENERAL */
-
 body {
     margin: 0;
     font-family: "Montserrat", sans-serif;
@@ -14,7 +13,6 @@ html {
 }
 
 /* HERO */
-
 .hero {
     min-height: 90vh;
     display: flex;
@@ -306,8 +304,7 @@ section p {
 }
 
 
-//* GALÁPAGOS */
-
+/* GALÁPAGOS */
 .galapagos {
     background-color: #111111;
 }
@@ -2237,4 +2234,326 @@ footer h2 span {
 #flight-form .service-button {
     margin-top: 20px;
     cursor: pointer;
+}
+/* REDES SOCIALES - ESTILO ELEGANTE */
+.footer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.footer-social a {
+    color: #d4af37;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #fff1a8;
+    text-shadow: 0 0 12px rgba(212, 175, 55, 0.35);
+}
+
+/* AJUSTE DE NAVEGACIÓN EN CELULARES */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 16px 20px;
+    }
+}
+/* REDES SOCIALES FLOTANTES - ESTILO DE LUJO */
+
+.floating-social {
+    position: fixed;
+    right: 22px;
+    bottom: 105px;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.floating-social a {
+    width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #111111;
+    color: #d4af37;
+    border: 1px solid #d4af37;
+    border-radius: 7px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.35);
+    transition: all 0.3s ease;
+}
+
+.floating-social svg {
+    width: 23px;
+    height: 23px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.floating-social a:nth-child(2) svg {
+    fill: currentColor;
+    stroke: none;
+}
+
+.floating-social a:hover {
+    background: #d4af37;
+    color: #111111;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 600px) {
+    .floating-social {
+        right: 14px;
+        bottom: 100px;
+    }
+
+    .floating-social a {
+        width: 42px;
+        height: 42px;
+    }
+}
+
+
+
+
+/* =====================================
+   VS TRAVEL CONCIERGE - LUXURY DESIGN
+===================================== */
+
+#vs-chat-button {
+    position: fixed;
+    right: 22px;
+    bottom: 24px;
+    z-index: 1001;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #C5A15A;
+    background: linear-gradient(145deg, #1b1b1b, #090909);
+    color: #DCC28D;
+    font-size: 30px;
+    cursor: pointer;
+    box-shadow: 0 5px 22px rgba(0, 0, 0, 0.45);
+    transition: all 0.35s ease;
+}
+
+#vs-chat-button:hover {
+    background: #C5A15A;
+    color: #111111;
+    transform: translateY(-3px);
+}
+
+#vs-chat-window {
+    display: none;
+    position: fixed;
+    right: 22px;
+    bottom: 98px;
+    z-index: 1000;
+    width: 370px;
+    max-width: calc(100vw - 28px);
+    height: 540px;
+    max-height: calc(100vh - 125px);
+    background: #101010;
+    color: #E5D8BD;
+    border: 1px solid #A98A4D;
+    border-radius: 13px;
+    overflow: hidden;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.55);
+    flex-direction: column;
+}
+
+#vs-chat-window.open {
+    display: flex;
+}
+
+.vs-chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 21px 19px;
+    background: linear-gradient(135deg, #191919, #101010);
+    border-bottom: 1px solid #65512E;
+}
+
+.vs-chat-header strong {
+    display: block;
+    color: #DCC28D;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+}
+
+.vs-chat-header small {
+    display: block;
+    color: #B9AA8E;
+    font-family: "Montserrat", sans-serif;
+    font-size: 9px;
+    letter-spacing: 1.8px;
+    margin-top: 5px;
+}
+
+#vs-chat-close {
+    border: none;
+    background: transparent;
+    color: #DCC28D;
+    font-size: 29px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+#vs-chat-close:hover {
+    color: #FFFFFF;
+}
+
+.vs-chat-language {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    padding: 12px 17px 5px;
+}
+
+.vs-chat-language button {
+    background: transparent;
+    border: 1px solid #8D7545;
+    color: #DCC28D;
+    padding: 5px 11px;
+    border-radius: 3px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 10px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.vs-chat-language button:hover {
+    background: #C5A15A;
+    color: #111111;
+}
+
+#vs-chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.vs-chat-message {
+    max-width: 88%;
+    padding: 13px 15px;
+    border-radius: 9px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 11px;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+.vs-chat-message.bot {
+    align-self: flex-start;
+    background: #201F1B;
+    border: 1px solid #594A2D;
+    color: #E5D8BD;
+}
+
+.vs-chat-message.user {
+    align-self: flex-end;
+    background: linear-gradient(135deg, #DCC28D, #B99550);
+    color: #17130D;
+}
+
+#vs-chat-options {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px 17px;
+    max-height: 160px;
+    overflow-y: auto;
+}
+
+#vs-chat-options button {
+    background: #171717;
+    color: #DCC28D;
+    border: 1px solid #75603A;
+    border-radius: 5px;
+    padding: 11px 12px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.2px;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#vs-chat-options button:hover {
+    background: #C5A15A;
+    color: #111111;
+    border-color: #DCC28D;
+    transform: translateX(2px);
+}
+
+#vs-chat-form {
+    display: flex;
+    gap: 9px;
+    padding: 14px 15px;
+    background: #151515;
+    border-top: 1px solid #594A2D;
+}
+
+#vs-chat-input {
+    flex: 1;
+    min-width: 0;
+    background: #201F1B;
+    color: #F5F0E5;
+    border: 1px solid #65512E;
+    border-radius: 5px;
+    padding: 11px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 11px;
+    outline: none;
+}
+
+#vs-chat-input:focus {
+    border-color: #DCC28D;
+}
+
+#vs-chat-form button {
+    width: 42px;
+    background: #C5A15A;
+    color: #111111;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#vs-chat-form button:hover {
+    background: #E5D1A3;
+}
+
+@media (max-width: 600px) {
+    #vs-chat-button {
+        right: 14px;
+        bottom: 20px;
+    }
+
+    #vs-chat-window {
+        right: 14px;
+        bottom: 88px;
+        width: calc(100vw - 28px);
+        height: min(540px, calc(100vh - 115px));
+    }
 }

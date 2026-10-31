@@ -1,3 +1,10 @@
+
+// ==========================================
+// VS LUXURY TRAVEL EXPERIENCES
+// SOLICITUDES DE VUELOS POR WHATSAPP
+// ==========================================
+
+// Elementos del formulario
 const flightForm = document.getElementById("flight-form");
 const flightRequest = document.getElementById("flight-request");
 const flightButton = document.querySelector('a[href="#flight-request"]');
