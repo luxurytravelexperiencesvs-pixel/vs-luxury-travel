@@ -2270,7 +2270,7 @@ footer h2 span {
 .floating-social {
     position: fixed;
     right: 22px;
-    bottom: 105px;
+    bottom: 170px;
     z-index: 999;
     display: flex;
     flex-direction: column;
@@ -2315,7 +2315,7 @@ footer h2 span {
 @media (max-width: 600px) {
     .floating-social {
         right: 14px;
-        bottom: 100px;
+        bottom: 160px;
     }
 
     .floating-social a {
@@ -2334,7 +2334,7 @@ footer h2 span {
 #vs-chat-button {
     position: fixed;
     right: 22px;
-    bottom: 24px;
+    bottom: 90px;
     z-index: 1001;
     width: 60px;
     height: 60px;
@@ -2358,7 +2358,7 @@ footer h2 span {
     display: none;
     position: fixed;
     right: 22px;
-    bottom: 98px;
+    bottom: 164px;
     z-index: 1000;
     width: 370px;
     max-width: calc(100vw - 28px);
@@ -2547,12 +2547,12 @@ footer h2 span {
 @media (max-width: 600px) {
     #vs-chat-button {
         right: 14px;
-        bottom: 20px;
+        bottom: 80px;
     }
 
     #vs-chat-window {
         right: 14px;
-        bottom: 88px;
+        bottom: 150px;
         width: calc(100vw - 28px);
         height: min(540px, calc(100vh - 115px));
     }
